@@ -1,0 +1,593 @@
+*{
+	/* overflow:auto; */
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	background-repeat: no-repeat;
+}
+body{
+background-color:rgb(46, 43, 43);
+}
+#mobile-nav-bar{
+	display: none;
+}
+.media{
+
+	font-size: 30px;
+	font-weight: bold;
+	background-color: rgb(1, 70, 70, 1);
+	
+	/* border-radius: 50%; */
+}
+.fa-linkedin{
+	color:#0077B5;
+}
+.fa-facebook{
+	color:#3b5999;
+}
+.fa-quora{
+	color: #b92b27;
+}
+.fa-instagram{
+	
+	color: #e4405f;
+}
+a:link {color:rgb(39, 35, 35);
+text-decoration: none;
+}
+a:visited {color:rgb(243, 104, 104);
+	text-decoration: none;
+}
+a:active {color:rgb(226, 83, 83);
+	text-decoration: none;
+}      
+a:hover{
+	color: rgb(62, 165, 165);
+}
+.primary-color{
+color:green;
+font-weight: bold;
+}
+.primary-bgcolor{
+background-color: rgb(68, 68, 65);
+}
+/* nav-bar */
+#nav-bar{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+z-index:2;
+position: fixed  ;
+top: 0;
+left: 0;
+right: 0;
+opacity: 1;
+}
+#container{
+display: flex;
+flex-wrap: wrap;
+}
+#logo
+{
+border-right: 3px solid white;
+font-size: 20px;
+border-radius: 50%;
+padding:0 15px; 
+}
+.item{
+padding:0 20px;
+transition:all 1s ease-in-out;
+}
+#item1
+{
+animation-name: rakesh;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+animation-direction: alternate;
+}
+@keyframes rakesh{
+0%{
+background-color:white;
+box-shadow: 2px 2px 2px 2px black;
+padding:0px 5px;
+}
+100%{
+background-color:rgb(1, 70, 70, 1);
+padding:0 25px;
+}
+}
+.item:hover{
+display: block;
+color:rgb(1, 70, 70, 1);
+text-shadow: 2px 2px solid black;
+z-index: 1;
+}
+/* Header */
+#header{
+height: 90vh;
+background-image: url(../img/header.jpg);
+background-size: 100% 100%;
+background-position: cover;
+background-color:rgba(255,255,255,1);
+opacity: 1;
+z-index: 1;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-end;
+transition: all 1s ease-in-out;
+}
+#h-p{
+	order: 1;
+	position:fixed ;
+	z-index: 4;
+}
+#header-1{
+	position: absolute;
+	order: 2;
+	z-index: 1;
+	background-color: rgba(1, 70, 70, 1);
+	height:40%;
+	width:40%;
+	color:rgba(1, 70, 70, 1);
+	transition: all 1s ease-in-out;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+#header-1:hover + p{
+	display:none;
+}
+#header button{
+	padding:0 20px;
+	animation-name:about;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+@keyframes about{
+	0%{
+		background-color: white;
+	}
+	100%{
+		background-color: rgb(226, 83, 83);
+	}
+}
+#header-1:hover :nth-child(2){
+	display: none;
+}
+#header-img{
+display: none;
+height: 40%;
+border-radius: 50%;
+background-image: url('../img/rakesh.jpg');
+background-size: 100% 100%;
+background-position: center;
+background-color:rgba(0, 255, 42, 1);
+width:20%;
+transition: all 1s ease-in-out;
+z-index: 1;
+
+}
+
+#header-1:hover{
+height: 70%;
+width:80%;
+color:rgb(256,256,256);
+z-index:1;
+order:2;
+}
+#header-1:hover>div{
+	display: block;
+}
+
+#home
+{
+position: fixed ;
+background-color: #f00;
+height:15px;
+top: 0;
+left: 0;
+right: 0;
+/* position:fixed  ; */
+}
+/* education */
+#education-block{
+margin: auto;
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+height: 700px;
+background-color:rgba(1, 70, 70, 1);
+}
+#education{
+display: flex;
+width: 60%;
+flex-wrap: wrap;
+height: 600px;
+justify-content: center;
+background-color:rgb(46, 43, 43);
+transition: all 1s linear;
+}
+#education:hover{
+width: 90%;
+}
+
+/* Education School */
+#school{
+flex:1;
+width: 200px;
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-items: center;
+background-color:rgba(255, 204, 102,1);
+z-index: 1;
+transition: all 1s ease-in-out;   
+transition-timing-function: linear; 
+}
+#school:hover{
+flex: 100;
+display: block;
+text-align: center;
+background-color: rgb(255, 204, 153);
+box-shadow: 10px 10px 10px 10px solid white;
+width:80%;
+z-index: 1;
+}
+#school:hover .education-about{
+display: block;
+}
+.left-part{
+font-size:5em;
+color: rgb(255, 153, 102);
+}
+.right-part{
+font-size:10px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex: 2;
+text-align: center;
+/* justify-self: flex-end; */
+font-style: italic;
+}
+.education-about{
+display: none;
+}
+/* Education University */
+#university{
+width: 60%;
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-items: center;
+flex: 1;
+background-color: rgba(255, 204, 255,1);
+z-index: 1;
+transition: all 1s ease-in-out;
+transition-timing-function: linear;
+/* transition-duration: 1s; */
+}
+#university .left-part{
+animation-name: current;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+@keyframes current{
+0%{
+color: rgba(255, 0, 0, 1);
+}
+25%{
+color: darkcyan;
+text-shadow: 2px 2px black;
+}
+50%{
+color: rgb(2, 12, 12);
+text-shadow: 2px 2px white;
+}
+75%{
+color: rgb(247, 22, 235);
+text-shadow: 2px 2px black;
+}
+100%{
+color: rgb(0, 250, 96);
+text-shadow: 2px 2px black;
+}
+}
+#university:hover{
+flex:200;
+display: block;
+text-align: center;
+background-color: rgb(255, 204, 153);
+box-shadow: 10px 10px 10px 10px solid rgb(31, 28, 28,1);
+width:80%;
+z-index: 1;
+}
+#university:hover .education-about{
+display: block;
+}
+.center{
+display: flex;
+flex-wrap:wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+/* Skills */
+#skills{
+background-color: rgb(46, 43, 43);
+height: 400px;
+display: flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+z-index: 1;
+opacity: 1;
+}
+#skill-container{
+width:80%;
+height: 90%;
+z-index: 1;
+background-color: rgba(1, 70, 70, 1);
+color:white;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-around;
+/* align-items: center; */
+}
+#skills-item1{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+text-align:right
+}
+#skills-item1 .skill-left{
+background-color: rgb(0, 250, 96);
+flex:2;
+}
+#skills-item1 .skill-right{
+flex:1;
+}
+#skills-item2{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+text-align: right;
+}
+#skills-item2 .skill-left{
+background-color: rgb(0, 250, 96);
+flex:1;
+}
+#skills-item2 .skill-right{
+flex:1;
+}
+#skills-item3{
+text-align:right;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#skills-item3 .skill-left{
+background-color: rgb(0, 250, 96);
+flex:6;
+}
+#skills-item3 .skill-right{
+flex:1;
+}
+#skills-item4{
+text-align:right;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#skills-item4 .skill-left{
+background-color: rgb(0, 250, 96);
+flex:4;
+}
+#skills-item4 .skill-right{
+flex:1;
+}
+#experience{
+background-color: rgb(46, 43, 43);
+height: 700px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+opacity: 1;
+list-style: none !important;
+}
+#experience-container{
+width:80%;
+height: 95%;
+z-index: 1;
+background-color: rgba(1, 70, 70, 1);
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-items: center;
+color:white;
+margin:0 10px;
+text-align: center;
+}
+#experience-item1{
+	overflow: auto !important;
+height: 40%;
+width: 20%;
+background-image: url('../img/gfg.png');
+background-size:100% 100%;
+background-position:center;
+border-radius: 50%;
+list-style: none !important;
+}
+#experience-item2{
+border-left: 4px solid rgb(255, 153, 102);
+}
+#experience-item2 p
+{
+text-align: center;
+font-style: oblique;
+color: rgb(1, 70, 70, 1);
+}
+/* achievements */
+#achievements{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#achievementsitem{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	 justify-content: center;
+	height: 100%;
+   background-color: rgba(1, 70, 70, 1);
+   flex-wrap: wrap;
+   width: 80%;
+}
+.acm{
+height: 450px;
+background-color:rgb(1, 70, 70, 1);
+text-align: center;
+color:whitesmoke;
+}
+#ICPC img{
+height:300px;
+width: 100%;
+}
+#GEEKSFORGEEKS img{
+height:300px;
+width: 100%;
+}
+#GEEKSFORGEEKS .btn{
+	display: block;
+background-color: #ff6347;
+padding:0px 5x;
+color:green;
+width:100%
+}
+#ICPC .btn{
+	display: block;
+background-color: rgb(106, 218, 152);
+padding:0px 5x;
+width: 100%;
+color:green
+}
+#CODECHEF img{
+height:192px;
+width: 100%;
+}
+#CODECHEF .btn{
+	display: block;
+background-color: rgb(106, 218, 152);;
+padding:0px 5x;
+color:green
+}
+#codersbit img{
+height:192px;
+width: 100%;
+}
+#codersbit .btn{
+	display: block;
+background-color: #ff6347;
+padding:0px 5x;
+color:green
+}
+#scholarship img{
+height:228px;
+width: 100%;
+}
+#scholarship .btn{
+	display: block;
+background-color: rgb(106, 218, 152);;
+padding:0px 5x;
+color:green
+}
+.primary{
+color:lightblue;
+background-color: crimson;
+}
+.gap{
+background-color: dodgerblue;
+height: 100px;
+display: flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: flex-end;
+color:rgb(256,256,256);
+text-shadow: 2px 2px  black;
+box-shadow: 5px 5px 5px 5px solid black;
+z-index:12;
+}
+#contact{
+	height: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+}
+#sub-contact{
+	display:flex;
+	width:80%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(1, 70, 70, 1);
+}
+input[type=text], select, textarea ,#email{
+	width: 80%; 
+	display: block;
+	border: 1px solid #ccc; 
+	border-radius: 4px;
+	box-sizing: border-box; 
+	resize: vertical 
+  }
+  
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  .container {
+	height:350;
+	width:50%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+  }
+
+#map{
+	background-color: wheat;
+	height:350px;
+	width:50%;
+}
+#footer{
+	background-color: rgb(1, 70, 70, 1);
+}
+#footer ul{
+	list-style: none;
+	display: flex;
+	font-size: 25px;
+	justify-content: space-between;
+	padding: 20px;
+	flex-wrap: wrap;
+}
