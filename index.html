@@ -254,14 +254,14 @@
 <div id="contact">
     <div id="sub-contact">
         <div class="container">
-            <form action="action_page.php">
+            <form method="POST" data-netlify="true">
           
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">          
+              <input type="text" id="fname" name="name" placeholder="Your name..">          
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="Your email..">
               <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
           
               <input type="submit" value="Submit">
           
