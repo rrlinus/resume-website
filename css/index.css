@@ -7,18 +7,10 @@
 	background-repeat: no-repeat;
 }
 body{
-background-color:rgb(46, 43, 43);
+background-color:white;
 }
 #mobile-nav-bar{
 	display: none;
-}
-.media{
-
-	font-size: 30px;
-	font-weight: bold;
-	background-color: rgb(1, 70, 70, 1);
-	
-	/* border-radius: 50%; */
 }
 .fa-github{
 	color:black;
@@ -36,24 +28,17 @@ background-color:rgb(46, 43, 43);
 	
 	color: #e4405f;
 }
-a:link {color:rgb(39, 35, 35);
+a:link {color:rgba(0, 255, 42, 1);
 text-decoration: none;
 }
-a:visited {color:rgb(243, 104, 104);
+a:visited {color:rgba(0, 255, 42, 1);
 	text-decoration: none;
 }
-a:active {color:rgb(226, 83, 83);
+a:active {color: rgb(207, 204, 202);
 	text-decoration: none;
 }      
 a:hover{
-	color: rgb(62, 165, 165);
-}
-.primary-color{
-color:green;
-font-weight: bold;
-}
-.primary-bgcolor{
-background-color: rgb(68, 68, 65);
+	color:#e4405f;
 }
 /* nav-bar */
 #nav-bar{
@@ -119,22 +104,29 @@ opacity: 1;
 z-index: 1;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content:center;
 align-items: flex-end;
 transition: all 1s ease-in-out;
 }
-#h-p{
+#hpp{
 	order: 1;
+	top:100px;
 	position:fixed ;
+	font-size: 40px;
 	z-index: 4;
+}
+#h-p{
+	/* display: none; */
+	font-size: 0px;
+	/* display: block; */
 }
 #header-1{
 	position: absolute;
 	order: 2;
 	z-index: 1;
 	background-color: rgba(1, 70, 70, 1);
-	height:40%;
-	width:40%;
+	height:20%;
+	width:80%;
 	color:rgba(1, 70, 70, 1);
 	transition: all 1s ease-in-out;
 	display: flex;
@@ -145,7 +137,6 @@ transition: all 1s ease-in-out;
 	display:none;
 }
 #header button{
-	padding:0 20px;
 	animation-name:about;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
@@ -171,15 +162,15 @@ background-image: url('../img/rakesh.jpg');
 background-size: 100% 100%;
 background-position: center;
 background-color:rgba(0, 255, 42, 1);
-width:20%;
+width:10%;
 transition: all 1s ease-in-out;
 z-index: 1;
 
 }
 
 #header-1:hover{
-height: 70%;
-width:80%;
+height: 50%;
+width:95%;
 color:rgb(256,256,256);
 z-index:1;
 order:2;
@@ -329,7 +320,6 @@ align-items: center;
 }
 /* Skills */
 #skills{
-background-color: rgb(46, 43, 43);
 height: 400px;
 display: flex;
 flex-wrap:wrap;
@@ -403,7 +393,6 @@ flex:4;
 flex:1;
 }
 #experience{
-background-color: rgb(46, 43, 43);
 height: 700px;
 display: flex;
 flex-wrap: wrap;
@@ -477,17 +466,17 @@ width: 100%;
 }
 #GEEKSFORGEEKS .btn{
 	display: block;
-background-color: #ff6347;
+background-color: rgb(226, 83, 83);
 padding:0px 5x;
-color:green;
+color:white;
 width:100%
 }
 #ICPC .btn{
 	display: block;
-background-color: rgb(106, 218, 152);
+background-color: rgb(226, 83, 83);
 padding:0px 5x;
 width: 100%;
-color:green
+color:white;
 }
 #CODECHEF img{
 height:192px;
@@ -495,9 +484,9 @@ width: 100%;
 }
 #CODECHEF .btn{
 	display: block;
-background-color: rgb(106, 218, 152);;
+background-color: rgb(226, 83, 83);
 padding:0px 5x;
-color:green
+color:white;
 }
 #codersbit img{
 height:192px;
@@ -505,9 +494,9 @@ width: 100%;
 }
 #codersbit .btn{
 	display: block;
-background-color: #ff6347;
+background-color: rgb(226, 83, 83);
 padding:0px 5x;
-color:green
+color:white;
 }
 #scholarship img{
 height:228px;
@@ -515,16 +504,16 @@ width: 100%;
 }
 #scholarship .btn{
 	display: block;
-background-color: rgb(106, 218, 152);;
+background-color: rgb(226, 83, 83);
 padding:0px 5x;
-color:green
+color:white
 }
 .primary{
-color:lightblue;
-background-color: crimson;
+color:white;
+background-color:rgb(226, 83, 83);
 }
 .gap{
-background-color: dodgerblue;
+background-color:white;
 height: 100px;
 display: flex;
 flex-wrap:wrap;
@@ -541,6 +530,10 @@ z-index:12;
 	flex-wrap: wrap;
 	justify-content:center;
 	align-items: center;
+	background-color: white;
+	
+
+	
 }
 #sub-contact{
 	display:flex;
@@ -548,7 +541,7 @@ z-index:12;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(1, 70, 70, 1);
+	background-color: rgb(145, 126, 102) !important;
 }
 input[type=text], select, textarea ,#email{
 	width: 80%; 
@@ -581,7 +574,7 @@ input[type=text], select, textarea ,#email{
 #map{
 	background-color: wheat;
 	height:350px;
-	width:50%;
+	width:40%;
 }
 #footer{
 	background-color: rgb(1, 70, 70, 1);
