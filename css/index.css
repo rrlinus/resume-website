@@ -434,12 +434,14 @@ color: white;
 }
 /* achievements */
 #achievements{
+	height: 2200px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 }
 #achievementsitem{
+	
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;

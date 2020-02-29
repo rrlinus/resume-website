@@ -204,6 +204,9 @@ background-color:rgba(1, 70, 70, 1);
     order:2;
     }
 /* experience */
+#experience{
+    height: 800px;
+    }
 #experience-container{
     width:80%;
     height:100%;
@@ -225,7 +228,7 @@ background-color:rgba(1, 70, 70, 1);
     /* border-radius: 50%; */
 }
 #experience-item2{
-    flex: 4;
+    flex: 10;
     border-left: 2px solid rgb(255, 153, 102);
 }
 #experience-item2 p{
