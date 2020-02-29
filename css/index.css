@@ -403,7 +403,7 @@ list-style: none !important;
 }
 #experience-container{
 width:80%;
-height: 95%;
+height:90%;
 z-index: 1;
 background-color: rgba(1, 70, 70, 1);
 display: flex;
@@ -415,9 +415,8 @@ margin:0 10px;
 text-align: center;
 }
 #experience-item1{
-	overflow: auto !important;
-height: 40%;
-width: 20%;
+height: 20%;
+width: 10%;
 background-image: url('../img/gfg.png');
 background-size:100% 100%;
 background-position:center;
@@ -431,7 +430,7 @@ border-left: 4px solid rgb(255, 153, 102);
 {
 text-align: center;
 font-style: oblique;
-color: rgb(1, 70, 70, 1);
+color: white;
 }
 /* achievements */
 #achievements{
@@ -564,7 +563,7 @@ input[type=text], select, textarea ,#email{
 	background-color: #45a049;
   }
   .container {
-	height:350;
+	height:500px;
 	width:50%;
 	border-radius: 5px;
 	background-color: #f2f2f2;
@@ -573,8 +572,8 @@ input[type=text], select, textarea ,#email{
 
 #map{
 	background-color: wheat;
-	height:350px;
-	width:40%;
+	height:500px;
+	width:50%;
 }
 #footer{
 	background-color: rgb(1, 70, 70, 1);
