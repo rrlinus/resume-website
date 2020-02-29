@@ -235,7 +235,13 @@ background-color:rgba(1, 70, 70, 1);
     text-align: center;
     color: white;
 }
-
+#achievements{
+	height: 2400px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
 /* Contacts */
 #sub-contact{
 	display:block;
