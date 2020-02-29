@@ -20,6 +20,9 @@ background-color:rgb(46, 43, 43);
 	
 	/* border-radius: 50%; */
 }
+.fa-github{
+	color:black;
+}
 .fa-linkedin{
 	color:#0077B5;
 }
@@ -108,7 +111,7 @@ z-index: 1;
 /* Header */
 #header{
 height: 90vh;
-background-image: url(../img/header.jpg);
+background-image: url(../img/header2.jpg);
 background-size: 100% 100%;
 background-position: cover;
 background-color:rgba(255,255,255,1);
