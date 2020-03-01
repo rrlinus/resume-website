@@ -28,6 +28,9 @@ background-color:white;
 	
 	color: #e4405f;
 }
+.fa-registered{
+	color:#e4405f;
+}
 a:link {color:rgba(0, 255, 42, 1);
 text-decoration: none;
 }
