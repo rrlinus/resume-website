@@ -52,6 +52,8 @@ top: 0;
 left: 0;
 right: 0;
 opacity: 1;
+box-shadow: 4px 4px 6px 5px rgb(46, 43, 43);
+background-color: rgba(105, 102, 102,0.5);
 }
 #container{
 display: flex;
