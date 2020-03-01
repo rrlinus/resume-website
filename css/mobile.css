@@ -96,7 +96,7 @@ animation-direction: alternate;
         box-shadow: -2px -2px 3px 6px rgb(80, 73, 73);
 }
 #ham-bar:hover+#nav-bar{
-    width: 30%;
+    width: 40%;
     display: block;
     height: 100vh;
     border-right: 2px solid white;
