@@ -29,6 +29,19 @@ border-right: 3px solid rgb(1, 70, 70, 1);
 font-size: 20px;
 border-radius: 70%;
 }
+#container  a:link {color:rgb(0,0,0);
+    text-decoration: none;
+}
+#container a:visited {color:rgba(0,0,0);
+        text-decoration: none;
+}
+#container a:active {color: rgb(0,0,0);
+        text-decoration: none;
+} 
+     
+#container a:hover{
+	color:#e4405f;
+} 
 #nav-bar{
     display: none;
     overflow: hidden;
@@ -93,6 +106,9 @@ animation-direction: alternate;
     to{
         border:6px solid salmon;
     }
+}
+#mobile-nav-bar i{
+    padding-right:20px;
 }
 #item1
 {

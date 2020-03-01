@@ -121,6 +121,7 @@ transition: all 1s ease-in-out;
 	/* display: block; */
 }
 #header-1{
+	border: 2px solid white;
 	position: absolute;
 	order: 2;
 	z-index: 1;
@@ -171,6 +172,7 @@ z-index: 1;
 #header-1:hover{
 height: 50%;
 width:95%;
+box-shadow: -2px -2px 2px 5px  rgb(0,0,0);
 color:rgb(256,256,256);
 z-index:1;
 order:2;
@@ -192,48 +194,49 @@ right: 0;
 /* education */
 #education-block{
 margin: auto;
-width: 80%;
+width: 100%;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 height: 700px;
-background-color:rgba(1, 70, 70, 1);
 }
 #education{
 display: flex;
-width: 60%;
+width: 80%;
 flex-wrap: wrap;
 height: 600px;
-justify-content: center;
-background-color:rgb(46, 43, 43);
-transition: all 1s linear;
+justify-content:space-between;
+align-items: center;
+background-color:rgb(1, 70, 70, 1);
+box-shadow: -1px -1px 3px 3px  rgb(94, 94, 99);
 }
 #education:hover{
-width: 90%;
+box-shadow: -2px -2px 2px 5px  rgb(0,0,0);
 }
 
 /* Education School */
 #school{
-flex:1;
-width: 200px;
+width: 40%;
+height: 50%;
 display: flex;
 flex-wrap: wrap;
 justify-content:center;
 align-items: center;
-background-color:rgba(255, 204, 102,1);
+background-color:rgba(255, 255,255,1);
 z-index: 1;
 transition: all 1s ease-in-out;   
 transition-timing-function: linear; 
+border-left:5px solid rgb(0, 250, 96);
+box-shadow: 1px 1px 2px 2px  rgb(94, 94, 99);
 }
 #school:hover{
-flex: 100;
+height:80%;
+width: 50%;
 display: block;
 text-align: center;
-background-color: rgb(255, 204, 153);
-box-shadow: 10px 10px 10px 10px solid white;
-width:80%;
 z-index: 1;
+box-shadow: -1px -1px 3px 3px  rgb(94, 94, 99);
 }
 #school:hover .education-about{
 display: block;
@@ -259,17 +262,19 @@ display: none;
 }
 /* Education University */
 #university{
-width: 60%;
-display: flex;
-flex-wrap: wrap;
-justify-content:center;
-align-items: center;
-flex: 1;
-background-color: rgba(255, 204, 255,1);
-z-index: 1;
-transition: all 1s ease-in-out;
-transition-timing-function: linear;
-/* transition-duration: 1s; */
+	width: 40%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+	background-color:rgba(255, 255,255,1);
+	z-index: 1;
+    box-shadow: -1px -1px 1px 1px  rgb(94, 94, 99);
+    border-right:5px solid rgb(0, 250, 96);
+	transition: all 1s ease-in-out;   
+	transition-timing-function: linear; 
+transition-duration: 1s;
 }
 #university .left-part{
 animation-name: current;
@@ -300,13 +305,12 @@ text-shadow: 2px 2px black;
 }
 }
 #university:hover{
-flex:200;
-display: block;
-text-align: center;
-background-color: rgb(255, 204, 153);
-box-shadow: 10px 10px 10px 10px solid rgb(31, 28, 28,1);
-width:80%;
-z-index: 1;
+	height:80%;
+	width: 50%;
+	display: block;
+	text-align: center;
+	z-index: 1;
+    box-shadow: -1px -1px 3px 3px  rgb(94, 94, 99);
 }
 #university:hover .education-about{
 display: block;
@@ -339,6 +343,11 @@ flex-wrap: wrap;
 flex-direction: column;
 justify-content: space-around;
 /* align-items: center; */
+box-shadow: -2px -2px 2px 2px  rgb(105, 102, 102);
+
+}
+#skill-container:hover{
+	box-shadow: -2px -2px 2px 5px  rgb(0,0,0);
 }
 #skills-item1{
 display: flex;
@@ -413,6 +422,13 @@ align-items: center;
 color:white;
 margin:0 10px;
 text-align: center;
+
+box-shadow: -2px -2px 2px 2px  rgb(105, 102, 102);
+
+}
+#experience-container:hover{
+	
+box-shadow: -2px -2px 2px 5px  rgb(0,0,0);
 }
 #experience-item1{
 height: 20%;
@@ -450,6 +466,13 @@ color: white;
    background-color: rgba(1, 70, 70, 1);
    flex-wrap: wrap;
    width: 80%;
+   
+box-shadow: -2px -2px 2px 2px  rgb(105, 102, 102);
+}
+#achievementsitem:hover{
+	
+box-shadow: -2px -2px 2px 5px  rgb(0,0,0);
+
 }
 .acm{
 height: 450px;
@@ -537,12 +560,16 @@ z-index:12;
 	
 }
 #sub-contact{
+    box-shadow: -2px -2px 2px 2px  rgb(105, 102, 102);
 	display:flex;
 	width:80%;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(145, 126, 102) !important;
+}
+#sub-contact:hover{
+	box-shadow: -2px -2px 2px 5px  rgb(0,0,0);
 }
 input[type=text], select, textarea ,#email{
 	width: 80%; 
